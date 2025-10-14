@@ -88,4 +88,4 @@ Sayı Tahmin: Tahmin oyunu
 Vurgu, başlık ve sensör renklerini değiştir
 10 farklı renk seçeneği
 Tüm ayarlar EEPROM'a kaydedilir (kalıcı)
-🛠️ Teknik DetaylarDonanım
+
