@@ -1,78 +1,334 @@
-# 🌟 StarLog - Çok Amaçlı ESP32 Cihazı
-### "Cebimde taşıyabileceğim, her durumda kullanabileceğim bir araç yapmak istedim."
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StarLog - Çok Amaçlı ESP32 Cihazı</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            padding: 30px 0;
+            border-bottom: 1px solid #30363d;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            color: #58a6ff;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        h2 {
+            color: #58a6ff;
+            margin: 25px 0 15px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #30363d;
+        }
+        
+        h3 {
+            color: #79c0ff;
+            margin: 20px 0 10px;
+        }
+        
+        .subtitle {
+            color: #8b949e;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        
+        .author {
+            color: #8b949e;
+            margin-bottom: 10px;
+        }
+        
+        .section {
+            background-color: #161b22;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .feature-card {
+            background-color: #21262d;
+            border-radius: 6px;
+            padding: 15px;
+            border-left: 4px solid #58a6ff;
+        }
+        
+        .feature-card h3 {
+            margin-top: 0;
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .gallery-item {
+            background-color: #21262d;
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .gallery-caption {
+            padding: 10px;
+            font-size: 0.9rem;
+            color: #8b949e;
+        }
+        
+        ul, ol {
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .quote {
+            border-left: 4px solid #238636;
+            padding-left: 15px;
+            margin: 20px 0;
+            font-style: italic;
+            color: #8b949e;
+        }
+        
+        .highlight {
+            background-color: rgba(56, 139, 253, 0.15);
+            padding: 15px;
+            border-radius: 6px;
+            margin: 20px 0;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #30363d;
+            color: #8b949e;
+            font-size: 0.9rem;
+        }
+        
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 15px 0;
+        }
+        
+        .tech-tag {
+            background-color: #13233a;
+            color: #58a6ff;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+        
+        @media (max-width: 768px) {
+            .features-grid, .gallery {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>StarLog</h1>
+        <div class="subtitle">Çok Amaçlı ESP32 Cihazı</div>
+        <div class="author">Muhammet Ayberk ARSLAN | STAX TECH | 2025</div>
+    </header>
 
-**Muhammet Ayberk ARSLAN | STAX TECH | 2025**
+    <div class="section">
+        <div class="quote">
+            "Cebimde taşıyabileceğim, her durumda kullanabileceğim bir araç yapmak istedim."
+        </div>
+        
+        <p>
+            StarLog bir İsviçre çakısı gibi - her durumda işe yarayabilecek, cebimde taşıyabileceğim bir araç. WiFi ağlarını tarayabilen, sensör verileri okuyabilen, 
+            servo motorları kontrol edebilen ve hatta oyun oynayabileceğim bir platform. Bu proje benim için sadece bir kod yığını değil - elektronik, yazılım ve kullanıcı deneyimi 
+            arasındaki dengeyi öğrenme sürecim.
+        </p>
+    </div>
 
----
+    <div class="section">
+        <h2>Özellikler</h2>
+        
+        <div class="features-grid">
+            <div class="feature-card">
+                <h3>IR Kumanda Klonlayıcı</h3>
+                <ul>
+                    <li>TV, klima, ses sistemi kumandalarını kopyalar</li>
+                    <li>50 adede kadar sinyali kaydeder</li>
+                    <li>23 popüler TV markası için hazır kodlar</li>
+                    <li>NEC, RC5, Sony protokollerini destekler</li>
+                </ul>
+            </div>
+            
+            <div class="feature-card">
+                <h3>WiFi Ağ Tarayıcı</h3>
+                <ul>
+                    <li>Çevredeki tüm WiFi ağlarını listeler</li>
+                    <li>Gizli ağları bile görüntüler</li>
+                    <li>Sinyal gücünü gösterir</li>
+                    <li>Kaydırılabilir liste ile rahat gezinti</li>
+                </ul>
+            </div>
+            
+            <div class="feature-card">
+                <h3>Sensör İzleme</h3>
+                <ul>
+                    <li>DHT11 ile sıcaklık ve nem ölçümü</li>
+                    <li>Gerçek zamanlı veri gösterimi</li>
+                    <li>Her ekranda sürekli görünür durum çubuğu</li>
+                </ul>
+            </div>
+            
+            <div class="feature-card">
+                <h3>Servo Motor Kontrolü</h3>
+                <ul>
+                    <li>0-180 derece hassas kontrol</li>
+                    <li>Perde açma, kapı kilidi gibi projelerde kullanılabilir</li>
+                    <li>10'ar derece artışlarla ayarlanabilir</li>
+                </ul>
+            </div>
+            
+            <div class="feature-card">
+                <h3>Mini Oyunlar</h3>
+                <ul>
+                    <li>Snake: Klasik yılan oyunu</li>
+                    <li>Pong: Tek kişilik top oyunu</li>
+                    <li>Sayı Tahmin: Tahmin oyunu</li>
+                </ul>
+            </div>
+            
+            <div class="feature-card">
+                <h3>Özelleştirilebilir Arayüz</h3>
+                <ul>
+                    <li>Vurgu, başlık ve sensör renklerini değiştir</li>
+                    <li>10 farklı renk seçeneği</li>
+                    <li>Tüm ayarlar EEPROM'a kaydedilir (kalıcı)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
-StarLog, düşük maliyetli ve ergonomik kod ile oluşturulmuş, **Flipper Zero** tarzı çok amaçlı bir cihazdır. Bir İsviçre çakısı gibi tasarlanan StarLog, elektronik, yazılım ve kullanıcı deneyimi dengesini bir araya getirerek her durumda işe yarayabilecek bir araç sunar. Pentesting, otomasyon ve eğlence amaçlı birçok fonksiyonu cebinizde taşıyın.
+    <div class="section">
+        <h2>Proje Görselleri</h2>
+        
+        <div class="gallery">
+            <!-- Bu kısma kendi fotoğraflarınızı ekleyin -->
+            <div class="gallery-item">
+                <img src="starlog-1.jpg" alt="StarLog Cihazının Ön Görünümü">
+                <div class="gallery-caption">StarLog Cihazının Ön Görünümü</div>
+            </div>
+            
+            <div class="gallery-item">
+                <img src="starlog-2.jpg" alt="IR Alıcı/Verici Detayı">
+                <div class="gallery-caption">IR Alıcı/Verici Detayı</div>
+            </div>
+            
+            <div class="gallery-item">
+                <img src="starlog-3.jpg" alt="WiFi Tarama Ekranı">
+                <div class="gallery-caption">WiFi Tarama Ekranı</div>
+            </div>
+            
+            <div class="gallery-item">
+                <img src="starlog-4.jpg" alt="IR Sinyal Kaydetme Arayüzü">
+                <div class="gallery-caption">IR Sinyal Kaydetme Arayüzü</div>
+            </div>
+            
+            <div class="gallery-item">
+                <img src="starlog-5.jpg" alt="Oyunlar Menüsü">
+                <div class="gallery-caption">Oyunlar Menüsü</div>
+            </div>
+            
+            <div class="gallery-item">
+                <img src="starlog-6.jpg" alt="Ayarlar Menüsü">
+                <div class="gallery-caption">Ayarlar Menüsü</div>
+            </div>
+        </div>
+    </div>
 
-## ✨ Temel Özellikler
+    <div class="section">
+        <h2>Teknik Detaylar</h2>
+        
+        <div class="tech-stack">
+            <span class="tech-tag">ESP32</span>
+            <span class="tech-tag">Arduino IDE</span>
+            <span class="tech-tag">IRremote</span>
+            <span class="tech-tag">WiFi</span>
+            <span class="tech-tag">DHT11</span>
+            <span class="tech-tag">Servo Motor</span>
+            <span class="tech-tag">EEPROM</span>
+            <span class="tech-tag">OLED Ekran</span>
+        </div>
+        
+        <h3>Gelecek Planları</h3>
+        <ul>
+            <li>Deauther ve beacon saldırı özellikleri</li>
+            <li>İki ESP kartı arası iletişim</li>
+            <li>Akıllı ev otomasyonu entegrasyonu</li>
+            <li>"StarLog interneti" - özel bir ağ sistemi</li>
+            <li>Acil durum bilgi iletimi sistemi</li>
+            <li>Yeni arayüz seçenekleri</li>
+        </ul>
+    </div>
 
-### 1. IR (Kızılötesi) Kumanda Klonlayıcı
-Kızılötesi sinyalleri (infrared) alıp kalıcı hafızaya kaydedebilir.
-* ∙IR Sinyallerini (infrared-kızılötesi) alıp kalıcı hafızaya kaydetme.
-* ∙Kullanıcı tarafından kaydedilen ve çok kullanılan cihazlara (TV, Klima vs) ait hazır IR Sinyallerini IR verici ile hedefe gönderme.
-* ∙NEC, RC5, Sony protokollerini destekler.
-* ∙50 adede kadar sinyali kaydeder.
-* ∙23 popüler TV markası için hazır kodlar.
+    <div class="section highlight">
+        <h3>Proje Hakkında</h3>
+        <p>
+            Flipper Zero tarzı pentesting ve eğlence amaçlı kullanılan cihazlardan birini en az maliyet ve en ergonomik kodla oluşturmak istedim.
+            Ortaya StarLog ismini verdiğim bir toolbox çıktı. Çok amaçlı bir cihaz. Henüz tam olarak belirli bir kategoriye sahip olamayacak
+            kadar farklı yönler var ancak ilerleyen zamanlarda pentest cihazı kısmına yöneleceğim.
+        </p>
+        <p>
+            Programın kendi içerisinde olabildiğince kompakt olmasını ve yeni fonksiyonlar eklenmeye açık bir
+            halde olmasını istediğim için çok fazla planlama yaptım ve ortaya yazdığım en düzenli programlardan
+            biri çıktı.
+        </p>
+    </div>
 
-### 2. WiFi Ağ Tarayıcı
-Çevrenizdeki ağlar hakkında bilgi edinmenizi sağlar.
-* ∙Çevredeki WiFi ağlarını tarama (ESP 2.4ghz desteği yüzünden sadece 2.4ghz yayın yapan ağlar).
-* ∙Gizli ağları bile görüntüler.
-* ∙Sinyal gücünü gösterir.
-*(Geliştirme aşamasında: İlerleyen zamanlarda deauth ve beacon saldırı özellikleri eklenecek.)*
-
-### 3. Sensör İzleme
-* ∙DHT Sensörü ile anlık olarak sıcaklık ve nem bilgilerini ekrana yazdırma.
-* ∙Gerçek zamanlı veri gösterimi, her ekranda sürekli görünür durum çubuğu.
-
-### 4. Diğer Araçlar & Kontrol
-* ∙Servo motor kontrolü (0-180 derece hassas kontrol).
-* ∙Harici 3v'luk Güç Çıkışı.
-
-### 5. Mini Oyunlar
-* ∙Küçük Oyunlar (pong, snake, sayı tahmin).
-
-### 6. Özelleştirilebilir Arayüz (EEPROM Entegrasyonu)
-Kullanıcı deneyimini kişiselleştirin.
-* ∙Cihazın kendine ait bir ayarlar menüsü var. Bu menüden yazı, aydınlatma, DHT renkleri gibi şeyler değiştirilebilir.
-* ∙Bu sistem kalıcı bir hafıza elde etmek için EEPROM ile entegre çalışıyor.
-
----
-
-## 💡 Geleceğe Dair Fikirler (Roadmap)
-
-1.  **Gelişmiş İletişim:** Servo kontrol gibi özellikler iki ESP kartı arası iletişim saplanarak akıllı ev otomasyonu gibi sistemlerler kullanılabilir ya da daha kapsamlı projeler için ESP-Bulut-ESP kurulabilir.
-2.  **StarLog İnterneti:** Bu bulut sistemi geliştirilebilir ve ortaya bir "StarLog interneti" çıkabilir. Bu ağ üzerinden cihazlar belirli amaçlar için iletişim kurabilir.
-3.  **Acil Durum Bilgi İletimi:** Bu iletişimin kullanılabileceği yerlerden biri acil durumlarda bilgi iletimi olabilir.
-4.  **Arayüz Seçenekleri:** Temel bir arayüz yaptım, başka arayüz seçeneğimiz yok ama arayüz seçenekleri eklenip cihaz kullanımı keyifli bir hale getirilebilir.
-
----
-
-## 📸 Projeden Görseller
-
-Aşağıdaki alana, cihazınızın ve arayüzünüzün fotoğraflarını sırasıyla ekleyebilirsiniz. Lütfen **Drive'dan aldığınız herkese açık bağlantıları** (`<URL_N>`) aşağıdaki HTML formatında sırayla yerlerine yapıştırın.
-
-### ⬇️ Görseller (Sırasıyla)
-
-<p align="center">
-  <img src="<URL_1>" alt="Görsel 1" width="400"/>](https://drive.google.com/file/d/1tAzGawHzs0uRezlR6jIiRI45Ymh7ggFn/view?usp=sharing
-  <br>
-  <img src="<URL_2>" alt="Görsel 2" width="400"/>
-  <br>
-  <img src="<URL_3>" alt="Görsel 3" width="400"/>
-  <br>
-  <img src="<URL_4>" alt="Görsel 4" width="400"/>
-  <br>
-  <img src="<URL_5>" alt="Görsel 5" width="400"/>
-  <br>
-  <img src="<URL_6>" alt="Görsel 6" width="400"/>
-</p>
-
-***
-
-**(Not: Lütfen `<URL_N>` kısımlarını kendi görsel bağlantılarınızla değiştirmeyi unutmayın. Görsellerin yatayda ortalanması için `<p align="center">` etiketi kullanıldı.)**
-
-**Tekrar Hatırlatma:** Google Drive linklerinin doğru çalışması için, linkin doğrudan `.jpg` veya `.png` gibi bir görüntü dosyasına işaret etmesi gerekir. Eğer Drive size bir görüntüleme sayfası linki veriyorsa, resmi direkt olarak GitHub deponuza yükleyip o linkleri kullanmak en garantili yoldur.
+    <footer>
+        <p>Muhammet Ayberk ARSLAN | STAX TECH | 2025</p>
+        <p>Proje GitHub: <a href="https://github.com/kullaniciadi/starlog" style="color: #58a6ff;">github.com/kullaniciadi/starlog</a></p>
+    </footer>
+</body>
+</html>
