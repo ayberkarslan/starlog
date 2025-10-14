@@ -53,15 +53,26 @@ Kullanıcı deneyimini kişiselleştirin.
 
 ## 📸 Projeden Görseller
 
-Aşağıdaki alana, cihazınızın ve arayüzünüzün fotoğraflarını sırasıyla ekleyebilirsiniz. Lütfen **Drive'dan aldığınız herkese açık bağlantıları** (`<URL_N>`) aşağıdaki formatta sırayla yerlerine yapıştırın.
+Aşağıdaki alana, cihazınızın ve arayüzünüzün fotoğraflarını sırasıyla ekleyebilirsiniz. Lütfen **Drive'dan aldığınız herkese açık bağlantıları** (`<URL_N>`) aşağıdaki HTML formatında sırayla yerlerine yapıştırın.
 
 ### ⬇️ Görseller (Sırasıyla)
 
-1.  `![Görsel 1](<https://drive.google.com/file/d/1tAzGawHzs0uRezlR6jIiRI45Ymh7ggFn/view?usp=sharing>)`
-2.  `![Görsel 2](<URL_2>)`
-3.  `![Görsel 3](<URL_3>)`
-4.  `![Görsel 4](<URL_4>)`
-5.  `![Görsel 5](<URL_5>)`
-6.  `![Görsel 6](<URL_6>)`
+<p align="center">
+  <img src="<URL_1>" alt="Görsel 1" width="400"/>](https://drive.google.com/file/d/1tAzGawHzs0uRezlR6jIiRI45Ymh7ggFn/view?usp=sharing
+  <br>
+  <img src="<URL_2>" alt="Görsel 2" width="400"/>
+  <br>
+  <img src="<URL_3>" alt="Görsel 3" width="400"/>
+  <br>
+  <img src="<URL_4>" alt="Görsel 4" width="400"/>
+  <br>
+  <img src="<URL_5>" alt="Görsel 5" width="400"/>
+  <br>
+  <img src="<URL_6>" alt="Görsel 6" width="400"/>
+</p>
 
-**(Not: Lütfen `<URL_N>` kısımlarını kendi görsel bağlantılarınızla değiştirmeyi unutmayın.)**
+***
+
+**(Not: Lütfen `<URL_N>` kısımlarını kendi görsel bağlantılarınızla değiştirmeyi unutmayın. Görsellerin yatayda ortalanması için `<p align="center">` etiketi kullanıldı.)**
+
+**Tekrar Hatırlatma:** Google Drive linklerinin doğru çalışması için, linkin doğrudan `.jpg` veya `.png` gibi bir görüntü dosyasına işaret etmesi gerekir. Eğer Drive size bir görüntüleme sayfası linki veriyorsa, resmi direkt olarak GitHub deponuza yükleyip o linkleri kullanmak en garantili yoldur.
