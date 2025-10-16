@@ -31,4 +31,7 @@ Snake: Klasik yılan oyunu Pong: Tek kişilik top oyunu Sayı Tahmin: Tahmin oyu
     Özelleştirilebilir Arayüz
 
 Vurgu, başlık ve sensör renklerini değiştir 10 farklı renk seçeneği Tüm ayarlar EEPROM'a kaydedilir (kalıcı)
+
+
+<br>
 <img src="https://raw.githubusercontent.com/ayberkarslan/starlog/refs/heads/main/images/1.jpg" width="400" alt="text">
